@@ -30,10 +30,12 @@
         {
             LoginButton = new Button();
             Username = new TextBox();
-            Password = new TextBox();
             panel1 = new Panel();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
+            Password = new TextBox();
+            usrLabel = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,67 +44,98 @@
             LoginButton.BackColor = SystemColors.MenuHighlight;
             LoginButton.FlatAppearance.BorderSize = 0;
             LoginButton.FlatStyle = FlatStyle.Flat;
-            LoginButton.Location = new Point(12, 449);
+            LoginButton.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            LoginButton.ForeColor = Color.Black;
+            LoginButton.Location = new Point(12, 491);
             LoginButton.Name = "LoginButton";
             LoginButton.Size = new Size(392, 49);
             LoginButton.TabIndex = 0;
             LoginButton.Text = "LOG-IN";
             LoginButton.UseVisualStyleBackColor = false;
+            LoginButton.Click += LoginButton_Click;
             // 
             // Username
             // 
             Username.BorderStyle = BorderStyle.None;
-            Username.Location = new Point(55, 236);
+            Username.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Username.Location = new Point(12, 294);
             Username.Name = "Username";
-            Username.Size = new Size(349, 20);
+            Username.Size = new Size(392, 31);
             Username.TabIndex = 1;
-            // 
-            // Password
-            // 
-            Password.BorderStyle = BorderStyle.None;
-            Password.Location = new Point(55, 348);
-            Password.Name = "Password";
-            Password.Size = new Size(349, 20);
-            Password.TabIndex = 2;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(12, 269);
+            panel1.Location = new Point(12, 338);
             panel1.Name = "panel1";
-            panel1.Size = new Size(392, 10);
+            panel1.Size = new Size(392, 4);
             panel1.TabIndex = 3;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaptionText;
-            panel2.Location = new Point(12, 381);
+            panel2.Location = new Point(12, 446);
             panel2.Name = "panel2";
-            panel2.Size = new Size(392, 10);
+            panel2.Size = new Size(392, 4);
             panel2.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._5087579;
-            pictureBox1.Location = new Point(120, 30);
+            pictureBox1.Location = new Point(106, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(186, 180);
+            pictureBox1.Size = new Size(213, 207);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            // 
+            // Password
+            // 
+            Password.BorderStyle = BorderStyle.None;
+            Password.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Password.Location = new Point(12, 402);
+            Password.Name = "Password";
+            Password.Size = new Size(392, 31);
+            Password.TabIndex = 6;
+            Password.UseSystemPasswordChar = true;
+            // 
+            // usrLabel
+            // 
+            usrLabel.AutoSize = true;
+            usrLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            usrLabel.ForeColor = SystemColors.HotTrack;
+            usrLabel.Location = new Point(12, 263);
+            usrLabel.Name = "usrLabel";
+            usrLabel.Size = new Size(113, 28);
+            usrLabel.TabIndex = 7;
+            usrLabel.Text = "USERNAME";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.HotTrack;
+            label1.Location = new Point(12, 371);
+            label1.Name = "label1";
+            label1.Size = new Size(118, 28);
+            label1.TabIndex = 8;
+            label1.Text = "PASSWORD";
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(416, 592);
+            ClientSize = new Size(416, 649);
+            Controls.Add(label1);
+            Controls.Add(usrLabel);
+            Controls.Add(Password);
             Controls.Add(pictureBox1);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(Password);
             Controls.Add(Username);
             Controls.Add(LoginButton);
+            ForeColor = SystemColors.HotTrack;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
@@ -116,9 +149,11 @@
 
         private Button LoginButton;
         private TextBox Username;
-        private TextBox Password;
         private Panel panel1;
         private Panel panel2;
         private PictureBox pictureBox1;
+        private TextBox Password;
+        private Label usrLabel;
+        private Label label1;
     }
 }

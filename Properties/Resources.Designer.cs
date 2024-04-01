@@ -69,5 +69,15 @@ namespace C__LOGIN.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap computer_icons_user_profile_avatar_profile {
+            get {
+                object obj = ResourceManager.GetObject("computer-icons-user-profile-avatar-profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
