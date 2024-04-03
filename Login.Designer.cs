@@ -36,6 +36,8 @@
             Password = new TextBox();
             usrLabel = new Label();
             label1 = new Label();
+            label2 = new Label();
+            RegisterLink = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -121,12 +123,37 @@
             label1.TabIndex = 8;
             label1.Text = "PASSWORD";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Desktop;
+            label2.Location = new Point(65, 554);
+            label2.Name = "label2";
+            label2.Size = new Size(197, 25);
+            label2.TabIndex = 9;
+            label2.Text = "Don't have an account?\r\n";
+            // 
+            // RegisterLink
+            // 
+            RegisterLink.AutoSize = true;
+            RegisterLink.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            RegisterLink.Location = new Point(257, 554);
+            RegisterLink.Name = "RegisterLink";
+            RegisterLink.Size = new Size(75, 25);
+            RegisterLink.TabIndex = 10;
+            RegisterLink.TabStop = true;
+            RegisterLink.Text = "Register";
+            RegisterLink.LinkClicked += RegisterLink_LinkClicked;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(416, 649);
+            Controls.Add(RegisterLink);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(usrLabel);
             Controls.Add(Password);
@@ -140,6 +167,7 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -155,5 +183,7 @@
         private TextBox Password;
         private Label usrLabel;
         private Label label1;
+        private Label label2;
+        private LinkLabel RegisterLink;
     }
 }
