@@ -5,9 +5,7 @@ This is a project created to learn how to connect a Firebase Firestore to a C# W
 
 Once a user registers to the system, there information is added to the Firestore collection. The program also sends an encrypted verson of the users password for privacy and checks if a username is already taken.
 ##
-<img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/e289378c-9667-406f-b61c-e1322f30e062" width="250"/>
-
-<img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/0379de0f-fc1a-4846-8464-deba7597d061" width="850"/>
+<img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/e289378c-9667-406f-b61c-e1322f30e062" width="250"/> <img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/0379de0f-fc1a-4846-8464-deba7597d061" width="800"/>
 
 ##
 
