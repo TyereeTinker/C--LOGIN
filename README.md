@@ -7,7 +7,7 @@ Once a user registers to the system, there information is added to the Firestore
 ##
 <img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/e289378c-9667-406f-b61c-e1322f30e062" width="250"/>
 
-<img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/0379de0f-fc1a-4846-8464-deba7597d061" width="500"/>
+<img src="https://github.com/TyereeTinker/C--LOGIN/assets/71784154/0379de0f-fc1a-4846-8464-deba7597d061"/>
 ##
 
 
