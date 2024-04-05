@@ -1,3 +1,5 @@
+using C__LOGIN.DataClasses;
+
 namespace C__LOGIN
 {
     internal static class Program
@@ -10,6 +12,9 @@ namespace C__LOGIN
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
+            FirestoreAccess.SetEnvironmentVariable(); 
+
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
         }

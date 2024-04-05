@@ -38,6 +38,8 @@
             label1 = new Label();
             label2 = new Label();
             RegisterLink = new LinkLabel();
+            ShowPass = new CheckBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -48,7 +50,7 @@
             LoginButton.FlatStyle = FlatStyle.Flat;
             LoginButton.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             LoginButton.ForeColor = Color.Black;
-            LoginButton.Location = new Point(12, 491);
+            LoginButton.Location = new Point(12, 551);
             LoginButton.Name = "LoginButton";
             LoginButton.Size = new Size(392, 49);
             LoginButton.TabIndex = 0;
@@ -60,7 +62,7 @@
             // 
             Username.BorderStyle = BorderStyle.None;
             Username.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Username.Location = new Point(12, 294);
+            Username.Location = new Point(12, 377);
             Username.Name = "Username";
             Username.Size = new Size(392, 31);
             Username.TabIndex = 1;
@@ -68,7 +70,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Location = new Point(12, 338);
+            panel1.Location = new Point(12, 414);
             panel1.Name = "panel1";
             panel1.Size = new Size(392, 4);
             panel1.TabIndex = 3;
@@ -76,7 +78,7 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveCaptionText;
-            panel2.Location = new Point(12, 446);
+            panel2.Location = new Point(12, 503);
             panel2.Name = "panel2";
             panel2.Size = new Size(392, 4);
             panel2.TabIndex = 4;
@@ -95,7 +97,7 @@
             // 
             Password.BorderStyle = BorderStyle.None;
             Password.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Password.Location = new Point(12, 402);
+            Password.Location = new Point(12, 466);
             Password.Name = "Password";
             Password.Size = new Size(392, 31);
             Password.TabIndex = 6;
@@ -106,7 +108,7 @@
             usrLabel.AutoSize = true;
             usrLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             usrLabel.ForeColor = SystemColors.HotTrack;
-            usrLabel.Location = new Point(12, 263);
+            usrLabel.Location = new Point(12, 346);
             usrLabel.Name = "usrLabel";
             usrLabel.Size = new Size(113, 28);
             usrLabel.TabIndex = 7;
@@ -117,7 +119,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.HotTrack;
-            label1.Location = new Point(12, 371);
+            label1.Location = new Point(12, 435);
             label1.Name = "label1";
             label1.Size = new Size(118, 28);
             label1.TabIndex = 8;
@@ -128,7 +130,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Desktop;
-            label2.Location = new Point(65, 554);
+            label2.Location = new Point(64, 612);
             label2.Name = "label2";
             label2.Size = new Size(197, 25);
             label2.TabIndex = 9;
@@ -138,7 +140,7 @@
             // 
             RegisterLink.AutoSize = true;
             RegisterLink.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            RegisterLink.Location = new Point(257, 554);
+            RegisterLink.Location = new Point(257, 612);
             RegisterLink.Name = "RegisterLink";
             RegisterLink.Size = new Size(75, 25);
             RegisterLink.TabIndex = 10;
@@ -146,12 +148,37 @@
             RegisterLink.Text = "Register";
             RegisterLink.LinkClicked += RegisterLink_LinkClicked;
             // 
+            // ShowPass
+            // 
+            ShowPass.AutoSize = true;
+            ShowPass.ForeColor = Color.Black;
+            ShowPass.Location = new Point(247, 513);
+            ShowPass.Name = "ShowPass";
+            ShowPass.Size = new Size(157, 24);
+            ShowPass.TabIndex = 11;
+            ShowPass.Text = "SHOW PASSWORD";
+            ShowPass.UseVisualStyleBackColor = true;
+            ShowPass.CheckedChanged += ShowPass_CheckedChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(84, 261);
+            label3.Name = "label3";
+            label3.Size = new Size(259, 46);
+            label3.TabIndex = 12;
+            label3.Text = "LOGIN SYSTEM";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(416, 649);
+            ClientSize = new Size(416, 689);
+            Controls.Add(label3);
+            Controls.Add(ShowPass);
             Controls.Add(RegisterLink);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -167,7 +194,6 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            Load += Login_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -185,5 +211,7 @@
         private Label label1;
         private Label label2;
         private LinkLabel RegisterLink;
+        private CheckBox ShowPass;
+        private Label label3;
     }
 }
